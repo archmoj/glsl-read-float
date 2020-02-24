@@ -1,7 +1,7 @@
 #define FLOAT_MAX  1.70141184e38
 #define FLOAT_MIN  1.17549435e-38
 
-lowp vec4 encode_float(highp float v) {
+highp vec4 encode_float(highp float v) {
   highp float av = abs(v);
 
   //Handle special cases
